@@ -8,7 +8,7 @@ function App() {
       className="w-full h-screen duration-900"
       style={{ backgroundColor: color }}
     >
-    <h1 className="text-center pt-80 text-2xl text-white uppercase font-bold animate-bounce ">{color}</h1>
+    <h1 className="text-center pt-80 text-8xl text-white uppercase font-bold animate-bounce ">{color}</h1>
       <div className="fixed flex flex-wrap justify-center bottom-14 inset-x-0 px-2">
         <div className="flex flex-wrap justify-center gap-3 shadow-lg px-3 py-2 rounded-3xl border-solid border-2" style={{backgroundColor: color}}>
           <button
