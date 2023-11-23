@@ -94,7 +94,7 @@ function App() {
           </div>
         </div>
       </div>
-        <div><p className="text-white">{password}</p></div>
+        <div className=""><p className="text-white text-center ">{password}</p></div>
     </>
   );
 }
