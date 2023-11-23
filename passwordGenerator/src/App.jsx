@@ -34,12 +34,14 @@ function App() {
   useEffect(() => {
     passwordGenerator();
   }, [length, numberAllowed, charAllowed, passwordGenerator]);
+    
+ 
+  
   return (
     <>
       <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-50 bg-gray-800">
         <h1 className="text-white text-center py-3"> Password Generator </h1>
-        <div className="flex  shadow rounded-lg overflow-hidden mb-4">
-         
+        <div className="flex  shadow rounded-lg overflow-hidden mb-4">       
           <input
             type="text"
             value={password}
@@ -48,7 +50,7 @@ function App() {
             readOnly
             ref={passwordRef}
           />
-          <button className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0">
+          <button onClick={(copyPasswordToClipboard) } className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0">
             Copy
           </button>
         </div>
@@ -92,6 +94,7 @@ function App() {
           </div>
         </div>
       </div>
+        <div><p className="text-white">{password}</p></div>
     </>
   );
 }
