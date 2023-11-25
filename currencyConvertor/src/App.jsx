@@ -5,12 +5,7 @@ function App() {
  
   return (
     <>
-    <div className='bg-black max-h-min'>
-
-     <h1 className='bg-black '>
-     Hello
-     </h1> 
-    </div>
+   <h1 className='text-3xl bg-orange-100'>Currecny App</h1>
     </>
   )
 }
