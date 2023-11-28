@@ -47,13 +47,15 @@ function App() {
                   type="button"
                   className="absolute left-1/2-translate-x-1/2-translate-y-1/2 border-2 border-white rounded-md bg-blue-500 text-white px-2 py-0.5"
                   onClick={swap}
+                  Convert {from.toUpperCase()}
                 ></button>
                  <input
                   label="To"
-                  amount={amount}
+                  amount={convetedAmount}
                   currncyOptions={options}
-                  onCurrencyChange={(currency) => setAmount(amount)}
+                  onCurrencyChange={(currency) =>{setTo(currency)}}
                   onSelect={from}
+                  amountDisable
                 />
               </div>
             </form>

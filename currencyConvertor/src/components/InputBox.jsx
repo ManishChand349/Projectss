@@ -41,6 +41,8 @@ function InputBox({
             <option key={currency} value={currency}> {currency}</option>
           ))}
         </select>
+
+        
       </div>
     </div>
   );
